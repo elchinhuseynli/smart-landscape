@@ -1,0 +1,23 @@
+@media (hover: hover) and (pointer: fine) {
+  /* Styles for non-touch devices */
+
+  .card_circle-button-icon {
+    transition: background 0.3s ease;
+  }
+  .card_wrapper:hover .card_circle-button-icon {
+    background: var(--base-color-brand--primary-50);
+  }
+
+  .card_image-wrapper .card_image {
+    scale: 1.1;
+    transition: scale 0.5s ease;
+  }
+
+  .card_wrapper:hover .card_image-wrapper .card_image {
+    scale: 1;
+  }
+}
+
+.card-cutout {
+  border-top-left-radius: calc(var(--card--border-radius-medium) + 0.25rem);
+}
